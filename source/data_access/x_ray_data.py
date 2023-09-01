@@ -1,4 +1,6 @@
+import sys
 import pandas as pd
+from source.exception import CustomeException
 
 class DataAcess:
     '''
@@ -13,6 +15,6 @@ class DataAcess:
         '''
         try:
             data = pd.read_csv(self.path)
-        except:
-            raise Exception()
+        except Exception as e:
+            raise CustomeException(e, sys)
         return data
