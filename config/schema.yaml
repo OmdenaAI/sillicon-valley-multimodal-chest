@@ -1,0 +1,16 @@
+
+# data validation config
+
+columns:
+  - ImageDir: str
+  - ProjectL: str
+
+
+drop_column:
+- abc
+- dff
+- ggg
+
+
+accuracy:
+- f1: 0.97
