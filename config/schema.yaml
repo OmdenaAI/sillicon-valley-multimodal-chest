@@ -1,0 +1,43 @@
+# Data validation config
+
+selected_columns:
+  - ImageID
+  - StudyDate_DICOM
+  - StudyID
+  - PatientID
+  - PatientBirth
+  - PatientSex_DICOM
+  - ViewPosition_DICOM
+  - ReportID
+  - Pediatric
+  - Report
+  - MethodLabel
+  - Labels
+  - Localizations
+  - LabelsLocalizationsBySentence
+  - PatientAge
+  - Report_en_ChatGPT
+  - Report_en_GoogleTr
+
+DataInputSchema:
+  ImageID: str
+  StudyDate_DICOM: str
+  StudyID: str
+  PatientID: str
+  PatientBirth: float
+  PatientSex_DICOM: str
+  ViewPosition_DICOM: str
+  ReportID: int
+  Pediatric: str
+  Report: str
+  MethodLabel: str
+  Labels: str
+  Localizations: str
+  LabelsLocalizationsBySentence: str
+  PatientAge: float
+  Report_en_ChatGPT: str
+  Report_en_GoogleTr: str
+
+nlpfeature:
+  - Report_en_ChatGPT
+
