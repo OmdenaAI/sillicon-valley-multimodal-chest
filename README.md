@@ -1,7 +1,7 @@
 
 # Silicon Valley Chapter: Multimodal Model for Pneumonia and Tuberculosis Detection from Chest X-Rays and EHR/Clinical Data
 
-![Project Image](./src/visualizations/DALL·E 2024-04-17 11.30.33.png) 
+<img src="./src/visualizations/DALL·E 2024-04-17 11.30.33.png">
 
 ## Project Overview
 Duration: 6-8 weeks
