@@ -1,11 +1,36 @@
-# chapter-project-repository-template
-Use this Repository as a template for creating Local Chapter Repositories
 
+# Silicon Valley Chapter: Multimodal-Pneumonia-Detection
 
-# [Chapter Challenge Name]
+## Multimodal Model for Pneumonia and Tuberculosis Detection from Chest X-Rays and EHR/Clinical Data
 
+## Project Overview
+Duration: 6-8 weeks
 
-## Contribution Guidelines
+This project aims to develop a multimodal model that utilizes both chest X-rays and electronic health records (EHR) or clinical data to enhance the detection of pneumonia and tuberculosis. By integrating visual and textual information, the model seeks to improve diagnostic accuracy and support healthcare professionals in making more informed decisions.
+
+## Objectives
+- **Develop a multimodal AI model**: Leverage advanced machine learning techniques to integrate and analyze data from different modalities.
+- **Improve detection accuracy**: Enhance the capability to accurately detect pneumonia and tuberculosis from combined datasets.
+- **Support clinical decisions**: Provide a tool that aids clinicians in diagnosing these respiratory diseases more effectively.
+
+## Datasets Used
+- **Chest X-ray Images**: The project uses the [PadChest dataset](http://bimcv.cipf.es/bimcv-projects/padchest/), a public, labeled, large-scale chest X-ray dataset with over 160,000 high-resolution images. Each image is accompanied by patient details such as age and sex, and annotated with 174 radiographic findings, 19 differential diagnoses, and 104 anatomic locations.
+- **EHR/Clinical Data**: The project explored the [MIMIC-III dataset](https://mimic.physionet.org/), which consists of de-identified health data from patients admitted to intensive care units. It includes clinical notes, lab results, medications, and other relevant health data.
+
+## Technologies and Methods Used
+- **NLP Techniques**: Explored Naive Bayes and Linear Support Vector Classifier for processing and analyzing textual data from EHR.
+- **Computer Vision Model**: 
+  - **Custom Loss Function**: Implemented a custom loss function using class frequency to handle data imbalance.
+  - **Pretrained Models**: Utilized DenseNet pretrained model for advanced feature extraction from chest X-ray images.
+- **Machine Learning Frameworks**: [PyTorch](https://pytorch.org/), [TensorFlow](https://www.tensorflow.org/)
+- **Data Handling**: Python, [Pandas](https://pandas.pydata.org/)
+- **Imaging Libraries**: [OpenCV](https://opencv.org/), [PIL](https://python-pillow.org/)
+
+## Contributors
+- Project led and managed by the Omdena Silicon Valley Chapter Lead Nishrin Kachwala.
+- Contributions from Omdena members specializing in AI, machine learning, and data science.
+
+## Contribution Guidelines for Collaborators
 - Have a Look at the [project structure](#project-structure) and [folder overview](#folder-overview) below to understand where to store/upload your contribution
 - If you're creating a task, Go to the task folder and create a new folder with the below naming convention and add a README.md with task details and goals to help other contributors understand
     - Task Folder Naming Convention : _task-n-taskname.(n is the task number)_  ex: task-1-data-analysis, task-2-model-deployment etc.
